@@ -27,8 +27,8 @@ def contact_form():
     if request.method == "POST":
         data = request.form.to_dict()
         msg = Message("New message from your Portfolio website", 
-                       sender="maksim.buturlakin@gmail.com",
-                       recipients=["maksim.buturlakin@gmail.com",])
+                       sender="galunova.portfolio@gmail.com",
+                       recipients=["galubezzz@gmail.com",])
         msg.body=data['name'] + ' wrote to you: \n' + data['message'] + \
         '\nEMAIL WAS ' + data['email']
         mail.send(msg)
