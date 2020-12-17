@@ -12,7 +12,7 @@ def html_page(page_name):
     return render_template(page_name)
 
 
-@app.route('/contact_form', methods=['POST', 'GET'])
+@app.route('/', methods=['POST'])
 def contact_form():
     if request.method == "POST":
         data = request.form.to_dict()
