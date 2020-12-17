@@ -25,6 +25,7 @@ def html_page(page_name):
 @app.route('/contact_form', methods=['POST', 'GET'])
 def contact_form():
     if request.method == "POST":
+        print("we are here")
         data = request.form.to_dict()
         msg = Message("New message from your Portfolio website", 
                        sender="galunova.portfolio@gmail.com",
